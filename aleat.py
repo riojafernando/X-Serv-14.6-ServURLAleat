@@ -4,10 +4,13 @@
 Mismo servidor de URLs aleatorias, pero hecho con orientacion a objetos
 """
 
+
 import webapp
 import random
 
-class Nuevo_Servidor(webapp.webApp):
+
+class Nuevo_Servidor (webapp.webApp):
+
 
     def process (self, parsedRequest):
         x = random.randrange(1000000)
@@ -18,6 +21,7 @@ class Nuevo_Servidor(webapp.webApp):
                    "</body></html>"
                    "\r\n")
         return ("200 OK", Request)
+
 
 if __name__ == "__main__":
     serv = Nuevo_Servidor("localhost", 1234)
