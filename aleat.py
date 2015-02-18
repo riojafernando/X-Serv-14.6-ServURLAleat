@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Mismo servidor de URLs aleatorias, pero hecho con orientacion a objetos
+Mismo servidor de URLs aleatorias, pero hecho con orientacion a objetos.
 """
 
 
