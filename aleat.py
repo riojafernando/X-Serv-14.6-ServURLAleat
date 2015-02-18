@@ -11,8 +11,7 @@ import random
 
 class Nuevo_Servidor (webapp.webApp):
 
-
-    def process (self, parsedRequest):
+    def process(self, parsedRequest):
         x = random.randrange(1000000)
         url = "http://localhost:1234/" + str(x)
         Request = ("<html><body><h1>Hola!</h1>" +
